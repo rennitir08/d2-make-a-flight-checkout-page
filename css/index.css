@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+.red {
+    color: red;
+}
+/*build your own modal*/
+.overlay-background {
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300vw;
+    height: 300vh;
+    overflow: hidden;
+    overflow-y: auto;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+.overlay-background.hidden {
+    opacity: 0;
+}
+.overlay {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25);
+    background-color: white;
+    width: 50vw;
+    margin: 0 auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 5px;
+    padding: 20px 30px;
+    
+}

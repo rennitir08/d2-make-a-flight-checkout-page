@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <title>OASIS Airlines</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch,Array.prototype.includes"></script>
+    <link href="css/datedropper.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css" />
+</head>
+<body>
+
+     <nav class="navbar">
+        <div class="row">
+             <div class="col-sm-2">
+                 <img class="logo" src="./OASISlogo.png" alt="logo" />
+            </div>
+                <div class="promo"> 
+                   Book your flight today for $100 off! Offer ends March 23, 2017.
+                </div>
+            </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="panel panel-default">
+                    <div class="panel-body flight text-center">
+                        Book a Flight <hr/>
+                    </div>
+                    <h5>Here at Oasis, we only travel to exotic locations at an affordable price!</h5>
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-5 col-sm-offset-1">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                            Round Trip
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 col-sm-offset-1">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                            One Way
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="form-group">
+                                <label for="sel1">From:</label>
+                                    <select class="form-control" id="sel1">
+                                        <option>Indianapolis, Indiana</option>
+                                    </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="sel1">To:</label>
+                                    <select class="form-control" id="sel1">
+                                        <option>Bay of Kotor, Montenegro</option>
+                                        <option>Forest of Knives, Madagascar</option>
+                                        <option>Kamalame Cay, The Bahamas</option>
+                                        <option>Playa del Carmen, Mexico</option>
+                                        <option>Curaçao, The Caribbean</option>
+                                    </select>
+                                    <br/>
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-primary" type="button">Departure Date</button>
+                                            </span>
+                                            <input type="text" class="form-control datedropper">      
+                                        </div>
+                                        <br/>
+                                        <div class="input-group">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-primary" type="button">Return Date</button>
+                                            </span>
+                                            <input type="text" class="form-control datedropper">     
+                                        </div>
+                                        <br/>
+                        <button id="showModalButton" type="button" class="btn btn-info btn-block">Book Flight!</button>
+                        </form>
+                        <div id="modal" class="overlay-background hidden">
+                            <div class="overlay">
+                                <div class="alert alert-success alert-dismissible" role="alert">
+                                    <button type="button" class="close hidden" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                        <strong>Flight Booked Successfully!</strong>
+                                        <img src="./flightconf.gif" alt="flight confirmation"/>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+        <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="js/datedropper.js"></script>
+    <script src="js/shine.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
